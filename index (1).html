@@ -1,0 +1,186 @@
+<!--
+  Estructura del repositorio para GitHub Pages:
+  /index.html      <- Este archivo
+  /images/
+      A_flat_digital_image_features_a_minimalist_golden_.png
+      A_digital_vector_illustration_features_a_minimalis.png
+      A_digital_vector_illustration_of_a_badge_icon_feat.png
+      pack_clasico.png
+      pack_foodie.png
+      pack_exotico.png
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saber Cervezero</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    :root { --dark-bg: #0d1b2a; --light-bg: #fefefe; --gold: #e0b973; --text-dark: #0d1b2a; --text-light: #ffffff; }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    html { font-size:16px; }
+    body { font-family:'Montserrat',sans-serif; color:var(--text-dark); background:var(--light-bg); }
+    a { text-decoration:none; color:inherit; }
+    header { background:var(--dark-bg); padding:1rem 2rem; position:sticky; top:0; z-index:100; }
+    .navbar { max-width:1200px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; }
+    .nav-logo { font-family:'Playfair Display',serif; font-size:1.75rem; color:var(--gold); }
+    .nav-menu { display:flex; gap:1.5rem; }
+    .nav-menu a { color:var(--text-light); font-weight:600; transition:color .3s; }
+    .nav-menu a:hover { color:var(--gold); }
+    .hero { display:flex; flex-direction:column; align-items:center; justify-content:center;
+             height:60vh; background:var(--dark-bg); color:var(--text-light);
+             text-align:center; padding:0 1rem; }
+    .hero h1 { font-family:'Playfair Display',serif; font-size:3rem; margin-bottom:.5rem; }
+    .hero p { font-size:1.125rem; margin-bottom:1.5rem; max-width:600px; }
+    .hero button { background:var(--gold); color:var(--dark-bg); padding:.75rem 2rem; font-size:1rem; border:none; border-radius:50px; cursor:pointer; }
+    section { max-width:1200px; margin:4rem auto; padding:0 1rem; }
+    section h2 { display:flex; align-items:center; font-family:'Playfair Display',serif; font-size:2.25rem; color:var(--text-dark); margin-bottom:1rem; }
+    .section-icon { width:32px; margin-right:.75rem; }
+    section p { font-size:1.05rem; line-height:1.6; color:#444; margin-bottom:1.5rem; }
+    .packs { display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:2rem; }
+    .pack { background:var(--light-bg); border-radius:12px; box-shadow:0 8px 24px rgba(0,0,0,0.1); overflow:hidden; transition:transform .3s; }
+    .pack:hover { transform:translateY(-8px); }
+    .pack img { width:100%; display:block; }
+    .pack-content { padding:1.5rem; text-align:center; }
+    .pack-content h3 { font-family:'Playfair Display',serif; font-size:1.5rem; margin-bottom:.75rem; }
+    .pack-content p { margin-bottom:.75rem; color:#555; }
+    .pack-content .price { font-size:1.25rem; font-weight:600; color:var(--text-dark); margin-bottom:1rem; }
+    .pack-content button { background:var(--gold); color:var(--text-dark); padding:.75rem 1.5rem; border:none; border-radius:50px; cursor:pointer; }
+    #paymentForm { display:grid; gap:1rem; max-width:400px; margin:0 auto; }
+    #paymentForm label { font-weight:600; }
+    #tracking, #payment, #catalog, #faq, #contact { display:none; }
+    .hidden { display:none!important; }
+    .faq-item { margin-bottom:1.5rem; }
+    .faq-item h3 { font-size:1.25rem; font-weight:600; margin-bottom:.5rem; }
+    .faq-item p { margin-left:1rem; color:#555; }
+    footer { background:var(--dark-bg); color:var(--text-light); text-align:center; padding:2rem 1rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="nav-logo">Saber Cervezero</div>
+      <nav class="nav-menu">
+        <a href="#home">Inicio</a>
+        <a href="#info">Nosotros</a>
+        <a href="#catalog">Packs</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contacto</a>
+      </nav>
+    </div>
+  </header>
+  <div id="home" class="hero">
+    <h1>Saber Cervezero</h1>
+    <p>La suscripción cervecera que educa y sorprende cada mes con experiencias únicas y maridajes exclusivos.</p>
+    <button id="subscribeBtn">Suscríbete ahora</button>
+  </div>
+  <section id="info">
+    <h2><img src="images/A_flat_digital_image_features_a_minimalist_golden_.png" class="section-icon" alt="Icono cerveza">¿Quiénes somos?</h2>
+    <p>Somos apasionados por la cerveza artesanal y creamos un puente entre productores locales y entusiastas del buen beber. Nuestra misión es transformar cada degustación en un momento memorable, fomentando la cultura cervecera y el maridaje gourmet.</p>
+    <h2><img src="images/A_digital_vector_illustration_features_a_minimalis.png" class="section-icon" alt="Icono compromiso">¿Por qué elegirnos?</h2>
+    <p>Con una cuidada selección de estilos, fichas técnicas exclusivas y contenido educativo, reinventamos la forma de descubrir cervezas. Nuestro compromiso con la calidad, la sostenibilidad y la innovación nos distingue en el mercado.</p>
+    <h2><img src="images/A_digital_vector_illustration_of_a_badge_icon_feat.png" class="section-icon" alt="Icono calidad">Nuestra Promesa de Calidad</h2>
+    <p>En Saber Cervezero, seleccionamos cada cerveza directamente de microcervecerías artesanales sostenibles, garantizando un proceso de elaboración cuidadoso y responsable. Nuestro packaging premium, diseñado en materiales eco-friendly, refleja la elegancia y el lujo que ofrecemos.</p>
+    <p>Con un servicio de suscripción flexible, atención personalizada y envíos exprés, te brindamos una experiencia única en cada entrega. Invertimos en innovación y excelencia para que cada sorbo supere tus expectativas y deleite a los paladares más exigentes.</p>
+  </section>
+  <section id="catalog">
+    <h2>Nuestros Packs</h2>
+    <div class="packs">
+      <div class="pack">
+        <img src="images/pack_clasico.png" alt="Pack Clásico">
+        <div class="pack-content">
+          <h3>Pack Clásico</h3>
+          <p>3 cervezas rubia clásicas.</p>
+          <p><strong>Coctel:</strong> Blue Moon Margarita</p>
+          <div class="price">USD 10</div>
+          <button class="buyBtn">Comprar ahora</button>
+        </div>
+      </div>
+      <div class="pack">
+        <img src="images/pack_foodie.png" alt="Pack Foodie">
+        <div class="pack-content">
+          <h3>Pack Foodie</h3>
+          <p>2 cervezas artesanales y 1 IPA.</p>
+          <p><strong>Coctel:</strong> IPA Spritz</p>
+          <div class="price">USD 20</div>
+          <button class="buyBtn">Comprar ahora</button>
+        </div>
+      </div>
+      <div class="pack">
+        <img src="images/pack_exotico.png" alt="Pack Exótico">
+        <div class="pack-content">
+          <h3>Pack Exótico</h3>
+          <p>Cervezas edición limitada y sabores únicos.</p>
+          <p><strong>Coctel:</strong> Tropical Stout Punch</p>
+          <div class="price">USD 30</div>
+          <button class="buyBtn">Comprar ahora</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="faq">
+    <h2>FAQ</h2>
+    <div class="faq-item">
+      <h3>¿Cómo funciona la suscripción?</h3>
+      <p>Elige tu pack y cada mes recibirás una selección de cervezas artesanales junto a recetas de maridaje, directamente en tu domicilio.</p>
+    </div>
+    <div class="faq-item">
+      <h3>¿Puedo cambiar de pack o pausar mi suscripción?</h3>
+      <p>Sí, desde tu área de cliente puedes modificar tu pack o pausar la suscripción con un aviso de al menos 5 días antes de la próxima cuota.</p>
+    </div>
+    <div class="faq-item">
+      <h3>¿Cómo rastreo mi pedido?</h3>
+      <p>Recibirás un correo de confirmación con un número de seguimiento para monitorear el estado del envío en tiempo real.</p>
+    </div>
+  </section>
+  <section id="payment">
+    <h2>Finaliza tu Compra</h2>
+    <form id="paymentForm">
+      <label for="name">Nombre Completo</label>
+      <input type="text" id="name" required>
+      <label for="email">Correo Electrónico</label>
+      <input type="email" id="email" required>
+      <label for="card">Número de Tarjeta</label>
+      <input type="text" id="card" required>
+      <label for="expiry">Vencimiento (MM/AA)</label>
+      <input type="text" id="expiry" placeholder="MM/AA" required>
+      <label for="cvc">CVC</label>
+      <input type="text" id="cvc" required>
+      <button type="submit">Pagar</button>
+    </form>
+  </section>
+  <section id="tracking">
+    <h2>Rastrea tu Pedido</h2>
+    <p>Tu pedido está en camino.</p>
+    <p>Fecha estimada de entrega: <span id="eta">--/--/----</span></p>
+  </section>
+  <footer id="contact">
+    <p>© 2025 Saber Cervezero. Todos los derechos reservados.</p>
+    <p>Contacto: info@sabercervezero.com</p>
+  </footer>
+  <script>
+    document.querySelectorAll('.nav-menu a').forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        const id = link.getAttribute('href').slice(1);
+        document.querySelectorAll('#catalog,#faq,#payment,#tracking,#contact').forEach(sec => sec.style.display='none');
+        const target = document.getElementById(id);
+        if (target) { target.style.display = id==='home' ? '' : 'block'; target.scrollIntoView({behavior:'smooth'}); }
+      });
+    });
+    document.getElementById('subscribeBtn').addEventListener('click', () => document.getElementById('catalog').style.display='block');
+    document.querySelectorAll('.buyBtn').forEach(btn => btn.addEventListener('click', () => {
+      document.getElementById('catalog').style.display='none';
+      document.getElementById('payment').style.display='block';
+    }));
+    document.getElementById('paymentForm').addEventListener('submit', e => {
+      e.preventDefault();
+      document.getElementById('payment').style.display='none';
+      document.getElementById('tracking').style.display='block';
+      const eta=new Date();eta.setDate(eta.getDate()+7);
+      document.getElementById('eta').textContent=eta.toLocaleDateString('es-ES');
+    });
+  </script>
+</body>
+</html>
